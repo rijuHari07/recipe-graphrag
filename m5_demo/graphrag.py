@@ -61,7 +61,7 @@ def format_graph_results(graph_results: List[Dict[str, Any]], question_type: str
             f"Cuisine: {row.get('cuisine', 'None')}\n"
             f"Time: {row.get('minutes', 'None')} min\n"
             f"Matched Ingredients: {row.get('matched_ingredients', 0)}\n"
-            f"Key Ingredients: {', '.join(row.get('recipe_ingredients', []))}\n"
+            f"Key Ingredients: {', '.join(row.get('ingredients', []))}\n"
             f"How to make it:\n{steps_text}\n"
         )
     return "\n\n".join(lines)
